@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar button {
+  font-family: "Poppins";
+}
+
+.navbar a {
+  font-family: "Poppins";
+}
+.navbar span {
+  font-family: "Poppins";
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.match {
+  width: 600px;
+  border-radius: 8px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(48, 48, 48, 0.1), 0 4px 4px 0 rgba(48, 48, 48, 0.1);
+  height: 300px;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 13px 25px;
+  justify-content: space-between;
+}
+
+.khali {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-board {
+  text-align: center;
+  width: 190px;
+}
+
+.khali i {
+  color: #b9b9b9;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.header .league {
+  display: flex;
+  align-items: center;
+}
+
+.league p {
+  margin-left: 10px;
+}
+
+.header .league img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header .match_status {
+  background-color: #fbeaec;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: 600;
+  color: #d82b41;
+  position: relative;
+}
+
+.match_status::after {
+  content: "";
+  background-color: #d82b41;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: 14px;
+  top: 15px;
+}
+
+.header .cancel {
+  background-color: #1f202210;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: 600;
+  color: #1f2022;
+  position: relative;
+}
+
+.cancel::after {
+  content: "";
+  background-color: #1f2022;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: 14px;
+  top: 15px;
+}
+
+.teams {
+  padding: 13px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-heading {
+  font-family: "Poppins";
+}
+
+.about-heading span {
+  color: #623ce6;
+  font-family: "Poppins";
+}
+
+.about-content p {
+  font-family: "Poppins";
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.team p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.team-logo {
+  background-color: #f3f5f9;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team img {
+  width: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 15px;
+  height: 100px;
+  box-shadow: 0 4px 4px 0 rgba(48, 48, 48, 0.15),
+    0 0 0 15px rgba(243, 245, 249, 1);
+}
+
+.score {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.big {
+  font-size: 42px;
+  color: #623ce6;
+}
+
+.score-board-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.score-board-heading h1 {
+  color: #623ce6;
+  font-family: "Poppins", sans-serif;
+  font-size: 29px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #eee;
+  font-weight: 600;
+  background-color: #f9f9f9;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("https://assets-global.website-files.com/5ca5fe687e34be0992df1fbe/6235ea7fbaf601e8d3980228_boy-kicking-ball-on-football-field-2021-09-24-03-47-56-utc-min-min.jpg");
+  background-size: cover;
+  color: #fff;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.banner p {
+  width: 700px;
+  font-family: "Poppins";
+}
+
+.fa-angle-right {
+  margin-left: 10px;
+}
+
+.see-more {
+  font-family: "Poppins";
+}
+
+@media (max-width: 700px) {
+  .banner p {
+    width: 340px;
+    font-family: "Poppins";
+  }
+  .match {
+    height: 629px;
+  }
+  .teams {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .league p {
+    display: none;
+  }
+  .banner h1 {
+    padding: 0 7px;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 10px;
+}
+
+
